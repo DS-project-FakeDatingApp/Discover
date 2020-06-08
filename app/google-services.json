@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "783372121333",
+    "firebase_url": "https://fakedatingapp-eb39d.firebaseio.com",
+    "project_id": "fakedatingapp-eb39d",
+    "storage_bucket": "fakedatingapp-eb39d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783372121333:android:bc6a76434d683651a401bc",
+        "android_client_info": {
+          "package_name": "com.example.fakedatingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783372121333-cfmkhn8655lb8knu6b2l5jrqsekr2de7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fakedatingapp",
+            "certificate_hash": "6c665019b1a6bf3de967be10fe6630c80f6f8b4a"
+          }
+        },
+        {
+          "client_id": "783372121333-a847010jk1evkgjt4l4ijoi9o1hssh30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyv3W5WBICfHyxZqylVHxIi-wRecayLQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783372121333-a847010jk1evkgjt4l4ijoi9o1hssh30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
