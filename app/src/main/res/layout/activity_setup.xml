@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout
+    tools:context=".SetupActivity"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:background="@android:color/darker_gray"
+        android:layout_height="46dp"
+        android:layout_width="315dp"
+        android:layout_centerHorizontal="true"
+        android:ems="12"
+        android:textSize="15sp"
+        android:textColorHint="@android:color/primary_text_dark"
+        android:hint="Full Name"
+        android:padding="15dp"
+        android:fontFamily="sans-serif-light"
+        android:imeOptions="actionNext|actionDone"
+        android:gravity="start"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/fullName"/>
+
+
+
+    <EditText
+        android:background="@android:color/darker_gray"
+        android:layout_height="46dp"
+        android:layout_width="315dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:textSize="15sp"
+        android:textColorHint="@android:color/primary_text_dark"
+        android:hint="Age"
+        android:fontFamily="sans-serif-light"
+        android:padding="15dp"
+        android:imeOptions="actionNext|actionDone"
+        android:gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/age"
+        android:inputType="number"
+        android:layout_below="@+id/fullName"/>
+
+    <Spinner
+        android:background="@android:color/darker_gray"
+        android:layout_height="46dp"
+        android:layout_width="315dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="26dp"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/gender"
+        android:layout_below="@id/age"
+        android:layout_marginLeft="26dp"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="#0FA3B1"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/register"
+        android:layout_marginLeft="25dp"
+        android:textColor="@android:color/primary_text_dark"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="Register"
+        android:fontFamily="sans-serif-light"/>
+
+</RelativeLayout>
