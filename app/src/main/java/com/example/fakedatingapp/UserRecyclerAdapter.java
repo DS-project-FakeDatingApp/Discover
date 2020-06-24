@@ -1,5 +1,7 @@
 package com.example.fakedatingapp;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +13,11 @@ import java.util.ArrayList;
 public class UserRecyclerAdapter extends RecyclerView.Adapter<UserRecyclerAdapter.ViewHolder> {
 
     private ArrayList<User> mUserList;
+    private Context mContext;
 
-    public UserRecyclerAdapter(ArrayList<User> mUserList) {
+    public UserRecyclerAdapter(Context mContext, ArrayList<User> mUserList) {
         this.mUserList = mUserList;
+        this.mContext = mContext;
     }
 
     @NonNull
@@ -25,9 +29,18 @@ public class UserRecyclerAdapter extends RecyclerView.Adapter<UserRecyclerAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         ((ViewHolder)holder).name.setText(mUserList.get(position).getName() + ",");
         ((ViewHolder)holder).age.setText(Integer.toString(mUserList.get(position).getAge()));
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, MessageActivity.class);
+                intent.putExtra("userId", mUserList.get(position).getUserID());
+                mContext.startActivity(intent);
+            }
+        });
     }
 
     @Override

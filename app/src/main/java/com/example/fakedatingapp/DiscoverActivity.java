@@ -26,9 +26,12 @@ public class DiscoverActivity extends AppCompatActivity {
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mUserListRecyclerView.setLayoutManager(linearLayoutManager);
 
-        mUserRecyclerAdapter = new UserRecyclerAdapter(nUserList);
+        mUserRecyclerAdapter = new UserRecyclerAdapter(this, nUserList);
         mUserListRecyclerView.setAdapter(mUserRecyclerAdapter);
-        Toast.makeText(getApplicationContext(), "Sorry, no users nearby", Toast.LENGTH_SHORT);
+
+        if(nUserList.size() == 0 || nUserList.size() == 1) {
+            Toast.makeText(getApplicationContext(), "Sorry, no users nearby", Toast.LENGTH_SHORT).show();
+        }
 
     }
 
